@@ -5,7 +5,7 @@
 
 ## How to use
 ```
-from sillynamegenerator.pp_silly_name_generator import *
+from sillynamegenerator.sillynamegenerator import *
 
 
 def main():

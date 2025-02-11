@@ -1,4 +1,9 @@
+"""Module that takes a normal first and last name and returns a silly first and last name."""
+
+
 class PoopypantsSillyNameGenerator:
+    """Class for storing silly name generation logic. """
+
     def __init__(self):
 
         self.first_name_dict = {
@@ -88,15 +93,13 @@ class PoopypantsSillyNameGenerator:
 
     def lookup(self, firstname, lastname):
         """
-        Look up keys in each of the three dictionaries.
-
+        Take firstname and lastname and return sillyname
         Args:
-            key1 (str): Key to look up in first_dict.
-            key2 (str): Key to look up in second_dict.
-            key3 (str): Key to look up in third_dict.
+            firstname (str): firstname
+            lastname (str): lastname
 
         Returns:
-            dict: A dictionary containing the results of the lookups.
+            str: A single string with silly name.
         """
         first_name_first_letter = firstname[0]
         last_name_first_letter = lastname[0]
@@ -112,3 +115,11 @@ class PoopypantsSillyNameGenerator:
         sillyname = f"{lookup1} {lookup2}{lookup3}"
 
         return sillyname
+
+    def print_generator_lookups(self):
+        """
+        Returns the dictionaries used for silly name generation.
+        """
+        print(f"First name lookup with first letter of first name: {self.first_name_dict}")
+        print(f"Last name part 1 lookup with first letter of last name: {self.last_name_dict_1}")
+        print(f"Last name part 2 lookup with last letter of last name: {self.last_name_dict_2}")

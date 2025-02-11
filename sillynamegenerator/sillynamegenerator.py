@@ -105,9 +105,6 @@ class PoopypantsSillyNameGenerator:
         last_name_first_letter = lastname[0]
         last_name_last_character = lastname[-1]
 
-        print(f"{firstname} --> {first_name_first_letter}")
-        print(f"{lastname} --> {last_name_first_letter}..{last_name_last_character}")
-
         lookup1 = self.first_name_dict.get(str.lower(first_name_first_letter))
         lookup2 = self.last_name_dict_1.get(str.lower(last_name_first_letter))
         lookup3 = self.last_name_dict_2.get(str.lower(last_name_last_character))

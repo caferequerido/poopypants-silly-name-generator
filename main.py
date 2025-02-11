@@ -5,14 +5,14 @@ def main():
     # Example usage:
     silly_name_gen = PoopypantsSillyNameGenerator()
 
-    # Define keys to look up in each dictionary
+    # collect normal name
     firstname = "Dav"
     lastname = "Pilkey"
 
-    # Perform the lookups and get the results
+    # Perform patented lookups to generate silly name
     sillyname = silly_name_gen.lookup(firstname, lastname)
     print(f"{firstname} {lastname}'s silly name is {sillyname}")
-
+    # Laugh hysterically
 
 if __name__ == "__main__":
     main()

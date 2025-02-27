@@ -1,17 +1,20 @@
 from sillynamegenerator.sillynamegenerator import *
 
 
-def main():
-    # Example usage:
+def print_poopy_name(firstname, lastname):
     silly_name_gen = PoopypantsSillyNameGenerator()
 
-    # collect normal name
-    firstname = "Dav"
-    lastname = "Pilkey"
+    print(f"{firstname} {lastname}'s silly name is {silly_name_gen.lookup(firstname, lastname)}")
 
-    # Perform patented lookups to generate silly name
-    sillyname = silly_name_gen.lookup(firstname, lastname)
-    print(f"{firstname} {lastname}'s silly name is {sillyname}")
+
+def main():
+    # Example usage:
+
+    print_poopy_name('Dav', 'Pilkey')
+    print_poopy_name('Lionel', 'Messi')
+    print_poopy_name('Cristiano', 'Rolaldo')
+    print_poopy_name('Albert', 'Einstein')
+
     # Laugh hysterically
 
 if __name__ == "__main__":
